@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--   <link rel="stylesheet" href="css/bootstrap-grid-3.3.2.min.css">-->
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="top-menu">
+            <ul>
+                <li class="active"><a href="#">о проекте</a>
+                    <ul>
+                        <li><a href="#">Редакционный совет</a></li>
+                        <li><a href="#">Команда проекта</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Расскажите о проекте</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">опухоли мозга</a></li>
+                <li><a href="#">лечение</a></li>
+                <li><a href="#">сопровождение</a></li>
+                <li><a href="#">материалы</a></li>
+            </ul>
+        </div>
+        <div class="search"> </div>
+    </div>
+    <div class="content">
+        <div class="top-text">
+            <p class="title">Заболевания головного мозга:</p>
+            <p class="small-title">восприятие обществом и реальность</p>
+            <strong class="opus">Когда ребенку поставлен диагноз опухоль головного мозга, родители чувствуют себя
+                растерянными и опустошенными. В этот момент очень важно понимать, что опухоль
+                мозга у ребенка - не приговор и что руки опускать нельзя. Психологический настрой близких и самого
+                ребенка значительно влияет на эффективность терапии.</strong>
+
+        </div>
+        <div class="menu-content">
+            <ul>
+                <li class="active" data-active="1"><strong >Что вызывает опухоль в ЦНС?</strong></li>
+                <li data-active="2"><strong >Что такое стадия опухоли?</strong></li>
+                <li data-active="3"><strong >Какой шанс выжить с опухолью головного мозга?</strong></li>
+                <li data-active="4"><strong >Все ли опухоли мозга лечатся одинково?</strong></li>
+            </ul>
+        </div>
+
+        <div class="tab active" data-active="1">
+        <div class="context">
+            <div class="left">
+                <p class="title">Миф общества</p>
+                <div class="text">
+                    <p>Можно выразиться кратко: мы этого не знаем. Мы только предполагаем, что факторы
+                        окружающей среды или генетика играют в этом какую то роль, но ни одно из множества проведенных
+                        на
+                        эту тему исследований не дало четкий ответ на вопрос, откуда берутся опухоли мозга. Наверняка
+                        можно
+                        утверждать лишь одно: опухоли нельзя "заразиться".
+                        В среднем 96% всех опухолей ЦНС приходится именно на опухоли головного мозга.</p></div>
+            </div>
+            <div class="right">
+                <p class="title">На самом деле</p>
+                <div class="text">
+                    <p>Можно выразиться кратко: мы этого не знаем. Мы только предполагаем, что факторы
+                        окружающей среды или генетика играют в этом какую то роль, но ни одно из множества проведенных
+                        на
+                        эту тему исследований не дало четкий ответ на вопрос, откуда берутся опухоли мозга. Наверняка
+                        можно
+                        утверждать лишь одно: опухоли нельзя "заразиться".
+                        В среднем 96% всех опухолей ЦНС приходится именно на опухоли головного мозга.</p></div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="forma">
+                <form action="#">
+                    <h2>Задайте свой вопрос</h2>
+                    <input type="text" class="large" placeholder="Имя" required>
+                    <input type="email" onkeyup="emailValidator($(this))" class="inline space" required
+                           placeholder="Электронная почта">
+                    <input type="tel" onkeyup="phoneValidator($(this))"  class="inline" required placeholder="Телефон">
+                    <textarea class="big" required placeholder="Ваш вопрос"></textarea>
+                    <button class="knopka">Отправить</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="tab" data-active="2">2</div>
+        <div class="tab" data-active="3">3</div>
+        <div class="tab" data-active="4">4</div>
+    </div>
+</div>
+
+<div class="container2">
+    <div class="line"></div>
+    <div class="footer">
+        <div class="first">
+            <div class="phone"><a href="tel:+8 800 250-93-05">8 800 250-93-05</a></div>
+            <div class="mail"><a href="mailto:info@onkobrain.com">info@onkobrain.com</a></div>
+        </div>
+        <div class="bottom-menu">
+            <ul>
+                <li><a href="#">о проекте</a>
+                <li><a href="#">опухоли мозга</a></li>
+                <li><a href="#">лечение</a></li>
+                <li><a href="#">сопровождение</a></li>
+                <li><a href="#">материалы</a></li>
+            </ul>
+        </div>
+        <div class="social">
+
+            <a href="#"><div class="facebook"></div></a>
+            <a href="#"> <div class="twitter"></div></a>
+                <a href="#"> <div class="vk"> </div></a>
+            <a href="#"><div class="odniklas"></div></a>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="copyright"><p>© Onkobrain,2016</p></div>
+    </div>
+</div>
+
+
+<script src="js/jq.js"></script>
+<script src="js/jquery.maskedinput-1.2.2.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('input[type=tel]').mask("+7(999)-999-99-99", {placeholder: "_"});
+    });</script>
+</body>
+</html>
+
+

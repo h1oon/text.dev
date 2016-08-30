@@ -1,0 +1,543 @@
+@font-face {
+    src: url("../fonts/lora/Lora-Bold.ttf");
+    font-family: "Lora-Bold" ;
+}
+
+@font-face {
+    src: url("../fonts/lora/Lora-BoldItalic.ttf");
+    font-family: "Lora-BoldItalic" ;
+}
+
+@font-face {
+    src: url("../fonts/lora/Lora-Italic.ttf");
+    font-family: "Lora-Italic" ;
+}
+
+@font-face {
+    src: url("../fonts/lora/Lora-Regular.ttf");
+    font-family: "Lora-Regular" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-Black.ttf");
+    font-family: "Roboto-Black" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-BlackItalic.ttf");
+    font-family: "Roboto-BlackItalic" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-Bold.ttf");
+    font-family: "Roboto-Bold" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-BoldItalic.ttf");
+    font-family: "Roboto-BoldItalic" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-Italic.ttf");
+    font-family: "Roboto-Italic" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-Light.ttf");
+    font-family: "Roboto-Light" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-LightItalic.ttf");
+    font-family: "Roboto-LightItalic" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+    font-family: "Roboto-Medium" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-MediumItalic.ttf");
+    font-family: "Roboto-MediumItalic" ;
+}
+
+@font-face {
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
+    font-family: "Roboto-Regular" ;
+}
+
+@font-face {
+    src: url('../fonts/roboto/Roboto-Thin.ttf');
+    font-family: "Roboto-Thin" ;
+}
+
+@font-face {
+    src: url('../fonts/roboto/Roboto-ThinItalic.ttf');
+    font-family: "Roboto-ThinItalic" ;
+}
+
+@font-face {
+    src: url('../fonts/roboto/RobotoCondensed-Regular.ttf');
+    font-family: "RobotoCondensed-Regular" ;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+.logo img {
+    width: auto;
+    margin-top: 8px;
+}
+
+.top-menu ul {
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+.top-menu ul li {
+    text-transform: uppercase;
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 16px;
+    float: left;
+    margin-left: 45px;
+    padding-left: 15px;
+    color: #009959;
+
+}
+
+.top-menu ul li:first-child {
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.top-menu ul li a {
+    text-decoration: none;
+    transform: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.top-menu ul li a:hover {
+    border-bottom: 2px solid #009959;
+}
+
+.header {
+    display: inline-flex;
+    width: 100%;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/search.png");
+    background-position: center,center;
+    background-repeat:no-repeat;
+    width: 25px;
+    height: 114px;
+}
+
+.top-menu ul li ul {
+    height: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #ebebeb;
+    margin-top: 20px;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+
+}
+
+.top-menu ul li:hover ul {
+    height: 55px;
+}
+
+.top-menu ul li:hover ul li a {
+    opacity: 1;
+}
+
+.top-menu ul li ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px !important;
+}
+
+.top-menu ul li ul li a {
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 16px;
+    color: #999999;
+    text-transform: none;
+    border: none !important;
+    margin-left: 30px;
+    opacity: 0;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.top-menu ul li ul li a:hover {
+    color: #009959;
+}
+
+.top-menu .active a {
+    border-bottom: 2px solid #009959;
+}
+
+.top-text {
+    width: 100%;
+    text-align: center;
+}
+
+.top-text .title {
+    text-transform: uppercase;
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+    margin-top: 110px;
+    font-weight: normal;
+}
+
+.top-text .small-title {
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.top-text .opus {
+    font-family: "Roboto-Light", Times, Baskerville, Georgia, serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.menu-content {
+    margin-top: 55px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menu-content ul {
+    padding: 0;
+}
+
+.menu-content ul li {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px dotted #009959;
+    width: 315px;
+    height: 125px;
+    vertical-align: bottom;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content ul li strong {
+    text-decoration: none;
+    color: black;
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu-content .active {
+    border: 3px dotted #009959;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    width: 309px;
+}
+
+.menu-content .active strong {
+    color: #009959;
+
+}
+
+.context {
+    width: 100%;
+    display: inline-flex;
+}
+
+.context .left {
+    width: 480px;
+    height: 230px;
+    text-align: right;
+
+}
+
+.context .right {
+    width: 800px;
+    height: 230px;
+    border-left: 3px solid #009959;
+    text-align: left;
+}
+
+.context .title {
+    text-transform: uppercase;
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 30px;
+    padding: 0 40px 0 40px;
+    margin: 0;
+}
+
+.context .text p {
+    font-family: "Roboto-Light", Times, Baskerville, Georgia, serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.context .text {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 184px;
+}
+
+.context .right .text p {
+    padding-left: 40px;
+}
+
+.context .left .text p {
+    padding-right: 40px;
+}
+
+/*footer*/
+.footer {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 62px;
+}
+
+.social a {
+
+    display: inline-block;
+
+}
+
+.bottom-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logo img {
+    width: auto;
+    margin-top: 8px;
+}
+
+.bottom-menu ul {
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+.bottom-menu ul li {
+    text-transform: uppercase;
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 14px;
+    float: left;
+    margin-left: 45px;
+    padding-left: 15px;
+    color: #009959;
+
+}
+
+.bottom-menu ul li:first-child {
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.bottom-menu ul li a {
+    text-decoration: none;
+    transform: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-menu ul li a:hover {
+    border-bottom: 2px solid #009959;
+}
+
+.social {
+    width: 200px;
+}
+
+.mail a,
+.phone a {
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: none;
+    color: #000;
+}
+
+.copyright p {
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.line {
+    border: 1px solid #d9d9d9;
+}
+
+.container2 {
+    width: 1280px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.container1 {
+    width: 1280px;
+    margin: auto;
+}
+
+.forma {
+    width: 630px;
+    margin: auto;
+
+}
+
+.large {
+    width: 620px;
+    height: 50px;
+}
+
+.inline {
+    width: 300px;
+    display: inline-block;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.space {
+    margin-right: 12px;
+}
+
+.forma {
+    width: 630px;
+    margin: auto;
+
+}
+
+.forma form {
+    margin-top: 85px;
+}
+
+.large {
+    width: 610px;
+    height: 50px;
+    padding-left: 10px;
+
+}
+
+.inline {
+    width: 290px;
+    display: inline-block;
+    margin-top: 20px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.space {
+    margin-right: 12px;
+}
+
+.big {
+    margin-top: 20px;
+    width: 610px;
+    height: 90px;
+    padding-left: 10px;
+    font-size: 16px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.forma h2 {
+    font-size: 48px;
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    text-align: center;
+}
+
+.forma input, .forma textarea {
+    font-family: "Lora-Regular", Times, Baskerville, Georgia, serif;
+    outline: none;
+}
+
+.knopka {
+    margin-left: 160px;
+    width: 300px;
+    height: 55px;
+    border: none;
+    margin-top: 20px;
+    background-color: #009959;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.container1 {
+    width: 100%;
+    margin: auto;
+}
+.vk,
+.facebook,
+.twitter,
+.odniklas{
+    width: 32px;
+    height: 32px;
+    background-position: center,center;
+    background-repeat:no-repeat;
+}
+.vk{
+    background-image: url("../img/vk.png");
+}
+.twitter{
+    background-image: url("../img/twitter.png");
+    
+}
+.facebook{
+    background-image: url("../img/facebook.png");
+    
+}
+.odniklas{
+    background-image: url("../img/odnoklasniku.png");
+}
+.tab{
+    display: none;
+}
+.tab.active{
+    display: block;
+}
